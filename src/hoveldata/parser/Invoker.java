@@ -158,14 +158,14 @@ public class Invoker {
             percent.invoked();
             return;
         }
-        Token l = new Token(macros);
+        Token t = new Token(macros);
         if (write.prev == null) {
-            write = new Page(l);
+            write = new Page(t);
         }
         else {
             write = write.prev;
             write.next = null;
-            write.add(l);
+            write.add(t);
         }
     }
 
