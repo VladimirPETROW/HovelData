@@ -11,3 +11,6 @@ and then reference
 &n
 ```
 will be resolved as *name*.
+
+# For any ideas
+Please feel free to send a pull request.
