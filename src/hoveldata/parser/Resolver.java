@@ -149,7 +149,7 @@ public class Resolver {
             return false;
         }
         if (resolve) {
-            String key = name.toString();
+            String key = name.toString().toUpperCase();
             String value = values.get(key);
             if (value != null) {
                 level.readChar();

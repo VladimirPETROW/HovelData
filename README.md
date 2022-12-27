@@ -1,5 +1,5 @@
 # HovelData
-Hovel Data is the data management system for single table databases. Such databases consists of several distributed files. One such file for one dataset.
+HovelData is the data management system for single table databases. Such databases consists of several distributed files. One such file for one dataset.
 
 Macro processor supports reference resolution.
 ```

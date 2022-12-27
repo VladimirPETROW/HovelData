@@ -3,10 +3,10 @@ package hoveldata.parser;
 public class Token {
     public Token prev, next;
     char[] buffer;
-    int read, write;
+    int read, write, begin;
     boolean mask, invoked;
 
-    Token.Kind kind;
+    public Token.Kind kind;
 
     public Token() {
         this(2048);
@@ -59,6 +59,14 @@ public class Token {
         if (read == 0) return -1;
         read--;
         return buffer[read];
+    }
+
+    public void beginRead() {
+        begin = read;
+    }
+
+    public void endRead() {
+        read = begin;
     }
 
     public int readChar() {
